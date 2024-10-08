@@ -1,7 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
   color: white;
-  background: black;
+  background: #121212;
 }
 
 a {
@@ -30,4 +30,34 @@ a:hover::before {
 
 a:hover {
   color: #fff; /* Optional: change text color on hover for better contrast */
+}
+
+
+.warning-bar {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text color */
+    padding: 15px; /* Padding around the text */
+    text-align: center; /* Center the text */
+    position: relative; /* Allow absolute positioning of close button */
+    z-index: 1000; /* Ensure the bar is above other content */
+}
+
+.warning-bar p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Optional: Add close button */
+.warning-bar::after {
+    content: '×'; /* Close button character */
+    position: absolute;
+    right: 20px; /* Position it on the right */
+    top: 50%; /* Center it vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    font-size: 20px; /* Font size for the close button */
+    color: #721c24; /* Same color as text */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.warning-bar:hover::after {
+    color: #f00; /* Change color on hover */
 }
