@@ -64,5 +64,13 @@
     <footer class="bg-gray-800 text-white text-center p-4">
         <p>© 2024 ProjectSpice™. All Rights Reserved.</p>
     </footer>
+    <script>
+        const warningBar = document.querySelector('.warning-bar');
+        warningBar.addEventListener('click', function(e) {
+            if (e.target.textContent === '×') {
+                warningBar.style.display = 'none'; // Hide the warning bar
+            }
+        });
+    </script>
 </body>
 </html>
