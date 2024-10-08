@@ -5,14 +5,30 @@ body {
 }
 
 a {
-  background: linear-gradient(to right, #ff0000, #0000ff);
-  background-size: 200%;
-  transition: background-position 1000ms;
-  text-decoration: none; /* Optional: removes underline from the link */
-  color: #ffffff; /* Optional: sets link text color */
+  position: relative;
+  display: inline-block;
+  color: #fff; /* Original text color */
+  text-decoration: none;
+  overflow: hidden;
 }
 
+a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #59995b; /* Swipe color */
+  transition: left 1000ms;
+  z-index: -1;
+}
+
+a:hover::before {
+  left: 0;
+}
+
+
 a:hover {
-  background-position: right;
-  text-decoration: underline;
+  color: #fff; /* Change text color on hover for better contrast */
 }
