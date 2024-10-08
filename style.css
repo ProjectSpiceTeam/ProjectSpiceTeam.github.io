@@ -1,0 +1,18 @@
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background: black;
+}
+
+a {
+  background: linear-gradient(to right, #ff0000, #0000ff);
+  background-size: 200%;
+  transition: background-position 1000ms;
+  text-decoration: none; /* Optional: removes underline from the link */
+  color: #ffffff; /* Optional: sets link text color */
+}
+
+a:hover {
+  background-position: right;
+  text-decoration: underline;
+}
