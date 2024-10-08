@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectSpice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+  <div class="bg-pastel-red-100">
+    <p class="text-dark-red-900">!</p>
+  </div>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-red-500 text-white p-6 text-center">
+        <h1 class="text-3xl font-bold">Welcome to ProjectSpice</h1>
+        <nav class="mt-4">
+            <ul class="flex justify-center space-x-6">
+                <li><a href="#about" class="hover:text-gray-200">About</a></li>
+                <li><a href="#features" class="hover:text-gray-200">Features</a></li>
+                <li><a href="#commands" class="hover:text-gray-200">Commands</a></li>
+                <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="max-w-4xl mx-auto my-10 p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold">About ProjectSpice</h2>
+        <p class="mt-4">ProjectSpice is a versatile Discord bot designed to enhance your cooking experience! manage ingredients, cook recipes, and interact with fellow cooking enthusiasts all in one place.</p>
+    </section>
+
+    <section id="features" class="max-w-4xl mx-auto my-10 p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold">Features</h2>
+        <ul class="mt-4 list-disc list-inside">
+            <li>Order some delicious food</li>
+            <li>Apply for chef and <i>cook</i> food for the customers</li>
+            <li>Fun rewards and achievements</li>
+        </ul>
+    </section>
+
+    <section id="commands" class="max-w-4xl mx-auto my-10 p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold">Commands</h2>
+        <p class="mt-4">Here are some of the commands you can use with ProjectSpice:</p>
+        <ul class="mt-4 list-disc list-inside">
+            <li><code>/daily special</code> - view the daily special</li>
+            <li><code>/help</code> - get a list of all commands</li>
+            <li><code>/discord</code> - get a link to the Discord</li>
+            <li><code>/menu</code> - get a link to the menu</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="max-w-4xl mx-auto my-10 p-6 bg-white rounded-lg shadow">
+        <h2 class="text-2xl font-semibold">Contact Us</h2>
+        <p class="mt-4">If you have any questions or feedback, feel free to reach out!</p>
+        <form class="mt-6">
+            <label for="name" class="block mt-4">Name:</label>
+            <input type="text" id="name" required class="mt-1 p-2 border rounded w-full" />
+            <label for="email" class="block mt-4">Email:</label>
+            <input type="email" id="email" required class="mt-1 p-2 border rounded w-full" />
+            <label for="message" class="block mt-4">Message:</label>
+            <textarea id="message" rows="4" required class="mt-1 p-2 border rounded w-full"></textarea>
+            <button type="submit" class="mt-4 w-full bg-red-500 text-white p-2 rounded hover:bg-red-600">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>© 2024 ProjectSpice™. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
